@@ -1,5 +1,7 @@
 export default class DataService {
     _data = {
+        projectRepo: "https://github.com/InsafKhamzin/portfolio",
+        react95Repo: "https://github.com/React95/React95",
         items: [
             {
                 id: 'about',
@@ -116,28 +118,28 @@ export default class DataService {
                 icon: 'inetcfg_2301',
                 content: {
                     emailText: "If you want to hire me or invite to a project, just email me on ",
-                    email:"khamzin.insaf@gmail.com",
+                    email: "khamzin.insaf@gmail.com",
                     socialText: "Or you can reach me out through social media:",
-                    social:[
+                    social: [
                         {
-                            name:"FaLinkedin",
-                            link:"https://www.linkedin.com/in/insaf-khamzin-915237129/"
+                            name: "FaLinkedin",
+                            link: "https://www.linkedin.com/in/insaf-khamzin-915237129/"
                         },
                         {
-                            name:"FaGithub",
-                            link:"https://github.com/InsafKhamzin"
+                            name: "FaGithub",
+                            link: "https://github.com/InsafKhamzin"
                         },
                         {
-                            name:"FaInstagram",
-                            link:"https://www.instagram.com/insafikus/"
+                            name: "FaInstagram",
+                            link: "https://www.instagram.com/insafikus/"
                         },
                         {
-                            name:"FaTwitter",
-                            link:"https://twitter.com/InsafKhamzin"
+                            name: "FaTwitter",
+                            link: "https://twitter.com/InsafKhamzin"
                         },
                         {
-                            name:"FaMedium",
-                            link:"https://medium.com/@hamzin730insaf"
+                            name: "FaMedium",
+                            link: "https://medium.com/@hamzin730insaf"
                         }
                     ]
                 }
@@ -152,5 +154,12 @@ export default class DataService {
 
     getItem(id) {
         return this._data.items.find(x => x.id === id);
+    }
+
+    getProjectInfo() {
+        return {
+            projectRepo: this._data.projectRepo,
+            react95Repo: this._data.react95Repo
+        };
     }
 }
