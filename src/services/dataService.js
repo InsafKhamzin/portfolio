@@ -11,7 +11,7 @@ export default class DataService {
                     paragraphs: [
                         "Hi! I am a Software Developer based in Toronto, just graduated from Seneca College and I am very excited to start my career in Canada. For the last several years I've been working as a Full Stack developer in a big FinTech company.",
                         "I believe that friendly and respectful communication within a team is key to the company's success. With my experience in software development and database design, I think I would be a valuable asset to your project.",
-                        "The main technology I have been using is C# .NET. But recently I fell in love with Node.js and I use it for most of my side projects. Moreover, I am in a good relationship with React (this web-site runs on React lol) and really fascinated by Machine Learning and Big Data.",
+                        "The main technology I have been using is C# .NET. But recently I fell in love with Node.js and I use it for most of my side projects. Moreover, I am in a good relationship with React (this web-site runs on React btw) and really fascinated by Machine Learning and Big Data.",
                         "When I am not in front of the computer, I usually do yoga, drink a specialty coffee and take quick walks in beatiful High Park."
                     ]
                 }
@@ -43,7 +43,6 @@ export default class DataService {
                             accomplishments: [
                                 "Developed CRM systems for different small-medium businesses",
                                 "Reviewed applications in progress of development to ensure corporate development standards",
-                                "Successfully integrated virtual and prepaid card issuance which brought to the company more than 100000 users and increased revenue by 5%",
                                 "Successfully planned, developed and tested modules for agricultural CRM which are used by 80% of farmers in Kazan, Russia",
                                 "Technologies used: C#, ASP.NET, SQL Server, JQuery, Semantic UI"
                             ]
