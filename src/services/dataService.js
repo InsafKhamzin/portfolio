@@ -142,8 +142,40 @@ export default class DataService {
                         }
                     ]
                 }
+            },            
+            {
+                id: 'projects',
+                name: 'Projects.txt',
+                icon: '',
+                content: {
+                    projects:[
+                        {
+                            title:'',
+                            description:'',
+                            status:'',
+                            url:''
+                        },
+                        {
+                            title:'',
+                            description:'',
+                            status:'',
+                            url:''
+                        },
+                        {
+                            title:'',
+                            description:'',
+                            status:'',
+                            url:''
+                        },
+                        {
+                            title:'',
+                            description:'',
+                            status:'',
+                            url:''
+                        },
+                    ]                    
+                }
             }
-
         ]
     }
 
