@@ -21,6 +21,7 @@ export default class DataService {
                 name: 'Resume.txt',
                 icon: 'notepad_2',
                 content: {
+                    resumeLink:"https://docs.google.com/document/d/1c_fPwOf4zo-vkSWJiCkSyiH2SZECb6JSeOSmgniaeQY/export?format=pdf",
                     workExperience: [
                         {
                             jobTitle: "Software Developer",
@@ -63,6 +64,51 @@ export default class DataService {
                             period: "SEPT 2014 – AUG 2018"
                         }
                     ]
+                }
+            },
+            {
+                id: "projects",
+                name: "Projects.txt",
+                icon: "flying_through_space_100",
+                content: {
+                    projects:[
+                        {
+                            title:"Cards.Webmoney",
+                            description:"Cards.Webmoney is a system for issuing and managing prepaid and virtual payment cards. Users can issue a payment card within few minutes, after that the card will be delivered on an address or provided right away if it's virtual. Cards.Webmoney is integrated with different payment processing systems such as WaveCrest, PaySpark, IntraPay.",
+                            myRole: "creating gateways between Cards.Webmoney and processing systems, developing and testing new features in the user's dashboard, maintaining and refactoring the existing functionality.",
+                            techStack:"C#, ASP.NET, SQL Server, JavaScript, TeamCity CI",
+                            url:"https://cards.web.money/en"
+                        },
+                        {
+                            title:"Guarantee.Money",
+                            description:"Guarantee.money is an escrow system that helps people to safely make a deal on the internet. The service acts as a trusted party in the transaction between the seller and the buyer. During the transaction period, the service expects confirmation from both participants about the completion or violation of conditions.",
+                            myRole: "designing, developing and testing core project's functions. Assigning tasks and planning future sprints for other developers. Integrating different payment methods such as payment cards, e-wallets, crypto.",
+                            techStack: "C#, ASP.NET, React/Redux, SQL Server, Dapper ORM, TeamCity CI",
+                            url:"https://guarantee.money/"
+                        },
+                        {
+                            title:"Platron.Pro",
+                            description:"Platron.Pro is a mass payout service for organizations. It provides a full range of direct gateways to integrated money transfer systems, credit organizations, mobile operators, etc.",
+                            myRole:"Integrating mass payouts to mobile operators.",
+                            techStack: "C#, ASP.NET, SQL Server, Entity Framework",
+                            url:"https://www.platron.pro"
+                            
+                        },
+                        {
+                            title:"CryptoBot",
+                            description:"CryptoBot is a Telegram chatbot that provides updated info about every existing cryptocurrency.",
+                            techStack: "Node.js, Serverless, AWS S3, Telegram API",
+                            url:"https://t.me/crypto_info1_bot",
+                            repo:"https://github.com/InsafKhamzin/crypto-info-bot"
+                        },
+                        
+                        {
+                            title:"My Portfolio Site",
+                            description:"My personal website in old-school Windows95 design.",
+                            techStack: "React, GitHub pages",
+                            repo: "https://github.com/InsafKhamzin/portfolio",
+                        },
+                    ]                    
                 }
             },
             {
@@ -142,52 +188,7 @@ export default class DataService {
                         }
                     ]
                 }
-            },            
-            {
-                id: "projects",
-                name: "Projects.txt",
-                icon: "flying_through_space_100",
-                content: {
-                    projects:[
-                        {
-                            title:"Cards.Webmoney",
-                            description:"Cards.Webmoney is a system for issuing and managing prepaid and virtual payment cards. Users can issue a payment card within few minutes, after that the card will be delivered on an address or provided right away if it's virtual. Cards.Webmoney is integrated with different payment processing systems such as WaveCrest, PaySpark, IntraPay.",
-                            myRole: "creating gateways between Cards.Webmoney and processing systems, developing and testing new features in the user's dashboard, maintaining and refactoring the existing functionality.",
-                            techStack:"C#, ASP.NET, SQL Server, JavaScript, TeamCity CI",
-                            url:"https://cards.web.money/en"
-                        },
-                        {
-                            title:"Guarantee.Money",
-                            description:"Guarantee.money is an escrow system that helps people to safely make a deal on the internet. The service acts as a trusted party in the transaction between the seller and the buyer. During the transaction period, the service expects confirmation from both participants about the completion or violation of conditions.",
-                            myRole: "designing, developing and testing core project's functions. Assigning tasks and planning future sprints for other developers. Integrating different payment methods such as payment cards, e-wallets, crypto.",
-                            techStack: "C#, ASP.NET, React/Redux, SQL Server, Dapper ORM, TeamCity CI",
-                            url:"https://guarantee.money/"
-                        },
-                        {
-                            title:"Platron.Pro",
-                            description:"Platron.Pro is a mass payout service for organizations. It provides a full range of direct gateways to integrated money transfer systems, credit organizations, mobile operators, etc.",
-                            myRole:"Integrating mass payouts to mobile operators.",
-                            techStack: "C#, ASP.NET, SQL Server, Entity Framework",
-                            url:"https://www.platron.pro"
-                            
-                        },
-                        {
-                            title:"CryptoBot",
-                            description:"CryptoBot is a Telegram chatbot that provides updated info about every existing cryptocurrency.",
-                            techStack: "Node.js, Serverless, AWS S3, Telegram API",
-                            url:"https://t.me/crypto_info1_bot",
-                            repo:"https://github.com/InsafKhamzin/crypto-info-bot"
-                        },
-                        
-                        {
-                            title:"My Portfolio Site",
-                            description:"My personal website in old-school Windows95 design.",
-                            techStack: "React, GitHub pages",
-                            repo: "https://github.com/InsafKhamzin/portfolio",
-                        },
-                    ]                    
-                }
-            }
+            }    
         ]
     }
 

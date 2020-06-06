@@ -9,7 +9,7 @@ const StyledSkill = styled.div`
 `
 
 
-function Skills({ content }) {
+function Skills({ content, isMobile }) {
     console.log(content)
     const { hard, soft } = content;
     return (
@@ -19,7 +19,7 @@ function Skills({ content }) {
                 hard.map((h, idx) => (
                     <StyledSkill key={idx}>
                         <p style={{ flex: 1 }}>{h.name}</p>
-                        <ProgressBar style={{ flex: 1 }} width={200} percent={h.progress} />
+                        <ProgressBar style={{ flex: 1 }} width={isMobile ? 150 : 200} percent={h.progress} />
                     </StyledSkill>
                 ))
             }

@@ -28,7 +28,7 @@ function Notepad({ closeNotepad, selectedItem, isMobile }) {
 					maxHeight: "60vh",
 				}}
             >
-            <ContentFactory id={selectedItem.id} />
+            <ContentFactory id={selectedItem.id} isMobile={isMobile} />
             </Frame>
         </Modal >
     )

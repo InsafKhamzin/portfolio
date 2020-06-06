@@ -6,7 +6,7 @@ import Skills from './Skills'
 import Contact from './Contact'
 import Projects from './Projects'
 
-function ContentFactory({ id }) {
+function ContentFactory({ id, isMobile }) {
     const data = useContext(DataContext);
     const [item, setItem] = useState(null);
 
@@ -25,7 +25,7 @@ function ContentFactory({ id }) {
         case 'resume':
             return <Resume content={item.content} />
         case 'skills':
-            return <Skills content={item.content} />
+            return <Skills content={item.content} isMobile={isMobile} />
         case 'contact':
             return <Contact content={item.content} />
         case 'projects':
