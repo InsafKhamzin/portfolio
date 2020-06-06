@@ -17,10 +17,9 @@ function Explorer({ items, closeExplorer, openNotepad, isMobile }) {
             title="Explorer - Insaf Khamzin"
             closeModal={closeExplorer}
             style={{
-                left: '10%',
+                left: isMobile ? '5%' : '15%',
                 top: '30%',
-                width: isMobile ? '80%' : 350,
-                height: isMobile? '35%' : 200,
+                width: isMobile ? '90%' : 400,
             }}
             menu={[
                 { name: 'File', list: [] },

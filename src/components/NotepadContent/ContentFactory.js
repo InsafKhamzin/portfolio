@@ -4,6 +4,7 @@ import About from './About'
 import Resume from './Resume'
 import Skills from './Skills'
 import Contact from './Contact'
+import Projects from './Projects'
 
 function ContentFactory({ id }) {
     const data = useContext(DataContext);
@@ -12,11 +13,11 @@ function ContentFactory({ id }) {
     useEffect(() => {
         const file = data.getItem(id);
         setItem(file);
-    }, [id, data]);    
-    
+    }, [id, data]);
+
     if (item === null) {
         return (<div></div>);
-    }    
+    }
 
     switch (item.id) {
         case 'about':
@@ -27,6 +28,8 @@ function ContentFactory({ id }) {
             return <Skills content={item.content} />
         case 'contact':
             return <Contact content={item.content} />
+        case 'projects':
+            return <Projects content={item.content} />
         default:
             return (<div></div>);
     }

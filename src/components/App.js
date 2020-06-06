@@ -10,7 +10,7 @@ const dataService = new DataService();
 
 const BodyFontSizeOverride = createGlobalStyle`
   body{
-    font-size: 15px
+    font-size: 14px
   }
 `
 

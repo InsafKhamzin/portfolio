@@ -12,7 +12,7 @@ function Notepad({ closeNotepad, selectedItem, isMobile }) {
             style={{
                 left: isMobile ? '5%' : '50%',
                 top: isMobile ? '3%' : '15%',
-                width: isMobile ? '90%' : 400,
+                width: isMobile ? '90%' : 450,
             }}
             menu={[
                 { name: 'File', list: [] },
