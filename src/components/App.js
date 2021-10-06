@@ -19,8 +19,7 @@ const App = () => (
     <ThemeProvider>
       <GlobalStyle />
       <BodyFontSizeOverride />
-
-      <Desktop />
+        <Desktop />
       <Taskbar />
     </ThemeProvider>
   </DataContext.Provider>

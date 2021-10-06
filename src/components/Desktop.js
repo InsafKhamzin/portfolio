@@ -29,7 +29,7 @@ function Desktop() {
         toggleExplorer(false);
     };
 
-    const openExlorer = () => {
+    const openExplorer = () => {
         toggleExplorer(true);
     };
 
@@ -44,7 +44,7 @@ function Desktop() {
 
     return (
         <React.Fragment>
-            <Shortcuts openExplorer={openExlorer} />
+            <Shortcuts openExplorer={openExplorer} />
             {
                 explorerOpened && (
                     <Explorer items={items} closeExplorer={closeExplorer} openNotepad={openNotepad} isMobile={isMobile} />
